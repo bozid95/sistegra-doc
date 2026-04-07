@@ -2,76 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sistegra Payment - Partner Documentation</title>
+  <title>Sistegra Payment Documentation</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-  
-  <style>
-    :root {
-      /* Warna utama (branding kamu) */
-      --theme-color: #2563eb; 
-      --base-font-size: 16px;
-      --content-max-width: 70em;
-    }
-
-    /* Membuat tampilan blok kode lebih kontras dan modern */
-    code[class*="language-"], pre[class*="language-"] {
-      background: #1e1e1e !important;
-      border-radius: 8px;
-      font-family: 'Fira Code', 'Consolas', monospace !important;
-      font-size: 0.9rem !important;
-    }
-
-    /* Pengaturan Sidebar agar lebih rapi */
-    .sidebar {
-      background-color: #f9fafb !important;
-      border-right: 1px solid #e5e7eb !important;
-    }
-
-    /* Kustomisasi tombol copy */
-    .docsify-copy-code-button {
-      background: #4b5563 !important;
-      color: white !important;
-      border-radius: 4px !important;
-      padding: 6px 10px !important;
-    }
-  </style>
 </head>
 <body>
-  <div id="app">Mohon tunggu, memuat dokumentasi...</div>
-
+  <div id="app">Loading...</div>
   <script>
     window.$docsify = {
-      // Nama Proyek
       name: 'Sistegra Payment',
       repo: 'https://github.com/bozid95/sistegra-doc',
       
-      // Konfigurasi Navigasi
-      loadSidebar: false, // Set ke true jika nanti kamu buat file _sidebar.md
+      // Navigasi standar
+      loadSidebar: false,
       subMaxLevel: 3,
       auto2top: true,
 
-      // Konfigurasi Search (Plugin)
-      search: {
-        maxAge: 86400000,
-        paths: 'auto',
-        placeholder: 'Cari sesuatu...',
-        noData: 'Hasil tidak ditemukan!',
-        depth: 6
-      },
+      // Plugin Pencarian
+      search: 'auto',
 
-      // Konfigurasi Copy Code (Plugin)
+      // Plugin Copy Code (Tombol bawaan tema)
       copyCode: {
         buttonText : 'Copy',
         errorText  : 'Error',
         successText: 'Copied'
-      },
-
-      // Konfigurasi Flexible Alerts (Plugin)
-      'flexible-alerts': {
-        style: 'flat'
       }
     }
   </script>
@@ -81,17 +37,10 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
 
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-
-  <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
-
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-http.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-typescript.min.js"></script>
 </body>
 </html>
