@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
-  <title>Sistegra Payment Documentation</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app">Loading dokumentasi...</div>
+  <div id="app"></div>
   <script>
     window.$docsify = {
       name: 'Sistegra Payment',
-      repo: 'https://github.com/bozid95/sistegra-doc', // Ganti dengan repo kamu
-      loadSidebar: false, // Set true jika ingin pakai sidebar manual (_sidebar.md)
+      repo: 'https://github.com/bozid95/sistegra-doc',
+      auto2top: true,
       subMaxLevel: 3,
+      // Konfigurasi Search
       search: 'auto',
+      // Tombol Copy Code
       copyCode: {
         buttonText : 'Copy',
         errorText  : 'Error',
@@ -24,10 +25,13 @@
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-http.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-http.min.js"></script>
 </body>
 </html>
