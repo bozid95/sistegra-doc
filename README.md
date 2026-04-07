@@ -169,7 +169,7 @@ x-signature: <hmac-sha256-hex>
 }
 ```
 
-## 3. Callback dari Sistegra ke Partner
+## 3. Callback dari Middleware ke Partner
 
 Callback partner menggunakan:
 
